@@ -331,4 +331,32 @@ bindkey -M vicmd "s" prepend-sudo\end{verbatim}
     'reply=(\$(((\$\#PREFIX+\$\#SUFFIX)/3 )) numeric )'}
 \end{frame}
 
+\begin{frame}[fragile]
+    \frametitle{Misc: Directory Hashing}
+    Hash directories like their home direcories for quick and convenient
+    access:
+    \medskip
+
+    \begin{verbatim}zsh % hash -d os=~/classes/cs/os
+zsh % cd ~os\end{verbatim}
+    \medskip
+
+    \pause
+    \begin{block}{Protip}
+        \small
+        If you copy your \texttt{\textasciitilde/.zshrc} between systems, it may be
+        convenient to set up hashes on a per system basis:
+        \smallskip
+        \begin{verbatim}case $(hostname) in
+    toilers)
+        hash -d web=/home/www
+        ;;
+    mastergo)
+        hash -d web=/var/www
+        ;;
+    ...
+esac\end{verbatim}
+    \end{block}
+\end{frame}
+
 \end{document}
