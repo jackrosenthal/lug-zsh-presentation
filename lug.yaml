@@ -1,0 +1,8 @@
+Title: "`zsh` Protips"
+Description: >
+    A presentation on some of the cooler features of `zsh`, and a how to on
+    setting up your `.zshrc`
+Date: 2016-04-04
+Files:
+    SlidesPDF: zsh.pdf
+    LaTeX: zsh.tex
